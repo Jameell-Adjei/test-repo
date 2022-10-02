@@ -4,10 +4,18 @@ function generateRandomValues(n , upperBound){
         storedVals.push(Math.trunc(Math.random() * upperBound));
         n--;
     }
+}
 
+
+
+
+const randomNumGen = (n , upperBound) =>{
+    for(let x = 0; x < n; x++){
+        storedVals.push(Math.trunc(Math.random() * upperBound));
+    }
     storedVals.forEach(element => {
         console.log(element)
     });
 }
 
-generateRandomValues(10, 817);
+randomNumGen(10, 817);
